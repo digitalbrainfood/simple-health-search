@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nAdd health insurance lead capture homepage\n\n- Create homepage with hero section, form, and styling matching design\n- Add thank you page for successful form submissions\n- Implement Lead Prosper and Ringba API integrations\n- Add Privacy Policy and Terms of Service pages\n- Include form validation and consent checkbox\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
+    ]
+  }
+}
