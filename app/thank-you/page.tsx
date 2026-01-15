@@ -1,9 +1,40 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import Script from "next/script";
+import { useEffect } from "react";
+
+declare global {
+  interface Window {
+    fbq: (...args: unknown[]) => void;
+    gtag: (...args: unknown[]) => void;
+  }
+}
 
 export default function ThankYou() {
+  useEffect(() => {
+    // Fire Meta Pixel Lead event
+    if (typeof window !== "undefined" && window.fbq) {
+      window.fbq("track", "Lead");
+    }
+
+    // Fire Google Ads conversion event
+    if (typeof window !== "undefined" && window.gtag) {
+      window.gtag("event", "conversion", {
+        send_to: "AW-17856739006",
+      });
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-white">
+      {/* Ringba Script */}
+      <Script
+        src="//b-js.ringba.com/CA2867709378390131869"
+        strategy="afterInteractive"
+      />
+
       {/* Navigation */}
       <nav className="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
         <div className="flex items-center gap-8">
@@ -24,11 +55,11 @@ export default function ThankYou() {
           </div>
         </div>
         <div className="flex items-center gap-4">
-          <a href="tel:8888618488" className="hidden md:flex items-center gap-2 text-gray-700 font-medium">
+          <a href="tel:+18337411902" className="hidden md:flex items-center gap-2 text-gray-700 font-medium">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
               <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
             </svg>
-            (888) 861-8488
+            (833) 741-1902
           </a>
           <Link href="/" className="bg-[#c5d86d] hover:bg-[#b5c85d] text-[#1e2a5e] font-semibold px-5 py-2.5 rounded-full transition-colors">
             Find your plan
@@ -52,8 +83,8 @@ export default function ThankYou() {
           <div className="bg-[#c5d86d] inline-block px-8 py-4 rounded-full">
             <p className="text-gray-800">
               Need help sooner? Call us now at{" "}
-              <a href="tel:8888147488" className="font-bold text-[#1e2a5e] hover:underline">
-                (888) 814-7488
+              <a href="tel:+18337411902" className="font-bold text-[#1e2a5e] hover:underline">
+                (833) 741-1902
               </a>{" "}
               for priority assistance.
             </p>

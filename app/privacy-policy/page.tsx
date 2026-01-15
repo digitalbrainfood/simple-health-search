@@ -18,11 +18,11 @@ export default function PrivacyPolicy() {
           </Link>
         </div>
         <div className="flex items-center gap-4">
-          <a href="tel:8888618488" className="hidden md:flex items-center gap-2 text-gray-700 font-medium">
+          <a href="tel:+18337411902" className="hidden md:flex items-center gap-2 text-gray-700 font-medium">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
               <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
             </svg>
-            (888) 861-8488
+            (833) 741-1902
           </a>
           <Link href="/" className="bg-[#c5d86d] hover:bg-[#b5c85d] text-[#1e2a5e] font-semibold px-5 py-2.5 rounded-full transition-colors">
             Find your plan
@@ -42,7 +42,7 @@ export default function PrivacyPolicy() {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-[#1e2a5e] mb-4">Introduction</h2>
             <p className="text-gray-700 mb-4">
-              Find The Plan (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
+              Find The Plan, operated by Healthie LLC DBA Healthie Insurance Agency (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;), is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website or use our services.
             </p>
           </section>
 
@@ -151,8 +151,11 @@ export default function PrivacyPolicy() {
             <p className="text-gray-700 mb-4">
               If you have any questions about this Privacy Policy, please contact us at:
             </p>
+            <p className="text-gray-700 mb-2">
+              <strong>Healthie LLC DBA Healthie Insurance Agency</strong>
+            </p>
             <p className="text-gray-700">
-              <strong>Phone:</strong> <a href="tel:8888147488" className="text-[#c5d86d] hover:underline">(888) 814-7488</a>
+              <strong>Phone:</strong> <a href="tel:+18337411902" className="text-[#c5d86d] hover:underline">(833) 741-1902</a>
             </p>
           </section>
         </div>

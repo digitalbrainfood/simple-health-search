@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import Script from "next/script";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
@@ -69,6 +70,12 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white">
+      {/* Ringba Script */}
+      <Script
+        src="//b-js.ringba.com/CA2867709378390131869"
+        strategy="afterInteractive"
+      />
+
       {/* Navigation */}
       <nav className="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
         <div className="flex items-center gap-8">
@@ -89,11 +96,11 @@ export default function Home() {
           </div>
         </div>
         <div className="flex items-center gap-4">
-          <a href="tel:8888618488" className="hidden md:flex items-center gap-2 text-gray-700 font-medium">
+          <a href="tel:+18337411902" className="hidden md:flex items-center gap-2 text-gray-700 font-medium">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
               <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
             </svg>
-            (888) 861-8488
+            (833) 741-1902
           </a>
           <button className="bg-[#c5d86d] hover:bg-[#b5c85d] text-[#1e2a5e] font-semibold px-5 py-2.5 rounded-full transition-colors">
             Find your plan
@@ -136,7 +143,7 @@ export default function Home() {
             </p>
 
             <p className="text-gray-700 mb-8">
-              Simply fill out the form or call <a href="tel:8888147488" className="text-[#c5d86d] font-semibold hover:underline">(888) 814-7488</a> to discuss your coverage options today.
+              Simply fill out the form or call <a href="tel:+18337411902" className="text-[#c5d86d] font-semibold hover:underline">(833) 741-1902</a> to discuss your coverage options today.
             </p>
 
             <p className="text-gray-600 mb-4">Our licensed specialists will help you:</p>
