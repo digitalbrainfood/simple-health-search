@@ -1,5 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy - Find The Plan",
+  description: "Learn how Find The Plan by Healthie Insurance Agency collects, uses, and protects your personal information. Your privacy matters to us.",
+};
 
 export default function PrivacyPolicy() {
   return (

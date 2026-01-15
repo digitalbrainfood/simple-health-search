@@ -1,5 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Terms of Service - Find The Plan",
+  description: "Review the terms and conditions for using Find The Plan health insurance services by Healthie Insurance Agency. Understand your rights and responsibilities.",
+};
 
 export default function TermsOfService() {
   return (
